@@ -1,0 +1,320 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+
+}
+
+
+.navbar a  {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+
+}
+.navbar a img
+{
+    float: left;
+    font-size: 16px;
+    color: white;
+    alignment: center;
+    text-decoration: none;
+
+    margin-top: 10px;
+}
+.navbar a img:hover
+{
+    background-color: #333333;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: lightgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: lightgray;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.icon {
+    display: inline-block;
+    width: 80em;
+    height: 1em;
+    font-size: 25px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: skyblue;
+    margin-top: -4px;
+
+}
+.icon-Blizzard {
+    width: 1.77734375em;
+}
+.icon:hover
+{
+    transform: scale(1.2);
+    color: deepskyblue;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* The image used */
+    background-image: url("https://i.playground.ru/p/_vl8uV89AorT5C6qPo9Nug.jpeg");
+background-size: cover;
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.collapsible {
+
+margin-top: -5px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+
+}
+
+.content {
+
+    display: none;
+    overflow: hidden;
+margin-top: -30px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background-image: url("https://blznav.akamaized.net/img/games/cards/card-world-of-warcraft-54576e6364584e35.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 11.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 11.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+.fend
+{
+    float: bottom;
+    margin-left: -10px;
+    padding: 40px;
+    width: 101.1%;
+    background-color: #111;
+    color: #dddddd;
+    margin-top: 50%;
+}
+.checked {
+    color: orange;
+}
+.commentBox {
+    padding: 1%;
+    width: 20%;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    margin-left: 42%;
+}
+
+.leftPanelImg {
+    width: 10%;
+    float: left;
+}
+
+.leftPanelImg img {
+    border-radius: 100%
+}
+
+.rightPanel {
+    width: 85%;
+    float: left;
+    margin-left: 1%;
+}
+
+.clear {
+    clear: both;
+}
+
+.form {
+    padding: 10px;
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form input[type="text"],
+.form textarea,
+.form imput[type="date"] {
+    border: 1px solid #000;
+    padding: 2px;
+    width: 300px;
+}

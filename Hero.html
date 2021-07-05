@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel="stylesheet" href="Heros.css">
+</head>
+<style>
+    body
+    {
+        font-family: Calibri;
+    }
+    .card {
+
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        transform: translate(-50%,-50%);
+        background: #000;
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+        width: 310px;
+        height: 450px;
+    }
+
+    .card .poster {
+
+        overflow: hidden;
+    }
+
+    .card .poster:before {
+        content: "";
+        position: absolute ;
+        bottom: -190px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg,#000 50%, transparent);
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .card:hover .poster:before {
+        bottom: 0;
+    }
+
+    .card .poster img {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .card:hover .poster img {
+        filter: blur(2px);
+        transform: translateY(-30px);
+    }
+    .details {
+        position: absolute;
+        padding: 20px;
+        width: 100%;
+        height: 74%;
+        bottom: -190px;
+        left: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    .card:hover .details {
+        bottom: 0;
+    }
+
+    .details h2 {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .details h2 span {
+        font-size: 14px;
+        color: #ff9800;
+    }
+
+
+
+    .tags {
+        position: relative;
+        margin-top: 5px;
+    }
+
+    .tags span {
+        padding: 2px 5px;
+        margin-right: 2px;
+        color: #fff;
+        display: inline-block;
+        border-radius: 4px;
+    }
+
+    .tags span.fantasy {
+        background: #7206f7;
+    }
+
+    .tags span.scifi {
+        background: #f70661;
+    }
+
+    .info {
+        color: #fff;
+    }
+
+    .info p {
+        margin: 15px 10px;
+    }
+</style>
+<body>
+
+<div class="card" style="margin-top: 15%;margin-left: 10%">
+    <div class="poster"><img style="height: 400px" src = "1aeba645-73d6-45c7-806d-25083654a92c.jpg"></div>
+    <div class="details">
+        <h2>Bekzat<br><span>CS king</span></h2>
+
+
+
+        <div class="tags">
+            <span class="fantasy">Class B</span>
+
+        </div>
+
+        <div class="info">
+            <p>The bold and courageous dwarves are an ancient race descended from the earthen—beings of living stone created by the titans when the world was young. Due to a strange malady known as the Curse of Flesh, the dwarves’ earthen progenitors underwent a transformation that turned their rocky hides into soft skin. Ultimately, these creatures of flesh and blood dubbed themselves dwarves
+                and carved out the mighty city of Ironforge in the snowy peaks of Khaz Modan.</p>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+</html>

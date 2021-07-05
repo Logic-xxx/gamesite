@@ -1,0 +1,267 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+
+}
+
+
+.navbar a  {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+
+}
+.navbar a img
+{
+    float: left;
+    font-size: 16px;
+    color: white;
+    alignment: center;
+    text-decoration: none;
+
+    margin-top: 10px;
+}
+.navbar a img:hover
+{
+    background-color: #333333;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: lightgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: lightgray;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+margin: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.icon {
+    display: inline-block;
+    width: 80em;
+    height: 1em;
+    font-size: 25px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: skyblue;
+    margin-top: -4px;
+
+}
+.icon-Blizzard {
+    width: 1.77734375em;
+}
+.icon:hover
+{
+    transform: scale(1.2);
+    color: deepskyblue;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* The image used */
+background-image:linear-gradient(to right,rgba(101,105,103,0.99),rgba(52,42,27,0.99));
+}
+#slideshow {
+    position: relative;
+    width: 300px;
+    height: 510px;
+    padding: 10px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#slideshow > div > img {
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+}
+h3 {
+    margin:5px 0;
+}
+
+.sliderContainer {
+    position: relative;
+
+
+}
+
+.slider {
+    width: 100%;
+
+
+}
+
+.slick-slide {
+
+    color: white;
+    padding: 0px 0 350px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-slide:nth-child(odd) {
+
+}
+
+.progressBarContainer {
+    position: absolute;
+    top: 700px;
+    width:300px;
+    left:40%;
+
+}
+
+.progressBarContainer div {
+    display: block;
+    width: 30%;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 5%;
+    float: left;
+    color: white;
+}
+
+.progressBarContainer div:last-child {
+    margin-right: 0;
+}
+
+.progressBarContainer div span.progressBar {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+}
+
+.progressBarContainer div span.progressBar .inProgress {
+    background-color: rgba(255, 255, 255, 1);
+    width: 0%;
+    height: 4px;
+}
+.header {
+
+    top: 600px;
+    z-index: 1;
+    width: 40%;
+    background-color: #f1f1f1;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+}
+
+.content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+    position: fixed;
+}
+.myVide {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: 20px;
+    margin-bottom: -4px;
+
+    box-sizing: border-box;
+
+
+}
+.fend
+{
+    float: bottom;
+    margin-left: -10px;
+    padding: 40px;
+    width: 95.8%;
+    background-color: #111;
+    color: #dddddd;
+    margin-top: 2%;
+    margin-bottom: -10px;
+}
+html{
+    width:100%;
+    height:100%;
+}
+
